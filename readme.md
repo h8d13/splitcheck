@@ -27,4 +27,5 @@ This also adheres closer to: https://wiki.archlinux.org/title/Arch_Linux#Simplic
 > Arch Linux official packages do not provide system-wide GUI configuration utilities (i.e. there is neither a GUI installation wizard nor a GUI system configuration tool, and Arch as a distribution does not promote GUI tools for system configuration), encouraging users to perform most system configuration from a command-line shell and a text editor.
 > In a similar fashion, Arch ships the configuration files provided by upstream with changes limited to distribution-specific issues like adjusting the system file paths. It does not add automation features such as enabling a service simply because the package was installed. Packages are only split when compelling advantages exist, such as to save disk space in particularly bad cases of waste.
 
-I believe the **same should be true to**: [docs](https://github.com/h8d13/dontreadthedocs)
+I believe the **same should be true to**: [docs](https://github.com/h8d13/dontreadthedocs) with the Alpine [precedent](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package#subpackages) (which I find very neat).
+
