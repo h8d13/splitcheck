@@ -17,7 +17,3 @@ Examples splits:
 - [`suil`](https://gitlab.archlinux.org/archlinux/packaging/packages/suil/-/blob/main/PKGBUILD?ref_type=heads)
 
 Some pakcages even deserve a `-docs` split. Aside, other examples include `-gtk`, `-qt`, `-somesidecomponent`.
-
-Which [`namcap`](https://gitlab.archlinux.org/pacman/namcap) detects based on path `/usr/share/doc`
-
-But not on `.html(5,x)`, `.txt`, `.md`, `.rst` extensions.
