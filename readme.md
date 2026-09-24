@@ -16,4 +16,8 @@ Examples splits:
 - [`v4l-utils`](https://gitlab.archlinux.org/archlinux/packaging/packages/v4l-utils/-/merge_requests/1.diff)
 - [`suil`](https://gitlab.archlinux.org/archlinux/packaging/packages/suil/-/blob/main/PKGBUILD?ref_type=heads)
 
-Some pakcages even deserve a `-docs` split. Which `namcap` detects based on path `/usr/share/doc` not `.html`, `.txt`, `.md` extensions.
+Some pakcages even deserve a `-docs` split.
+
+Which [`namcap`](https://gitlab.archlinux.org/pacman/namcap) detects based on path `/usr/share/doc`
+
+But not on `.html(5,x)`, `.txt`, `.md`, `.rst` extensions.
