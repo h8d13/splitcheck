@@ -30,3 +30,8 @@ Packages including "debug UI tools", examples include splitting `-gtk`, `-qt`, `
 > In a similar fashion, Arch ships the configuration files provided by upstream with changes limited to distribution-specific issues like adjusting the system file paths. It does not add automation features such as enabling a service simply because the package was installed. Packages are only split when compelling advantages exist, such as to save disk space in particularly bad cases of waste.
 
 Believe the **same should be true to**: [docs](https://github.com/h8d13/dontreadthedocs) with the Alpine [precedent](https://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package#subpackages) (which I find very neat).
+Where a `-docs` convention already exists. I,e: [`wireplumber-docs`](https://gitlab.archlinux.org/archlinux/packaging/packages/wireplumber/-/blob/main/PKGBUILD?ref_type=heads)
+
+---
+
+These obviously take a **bit of work and due process**, but make for a smaller and more "explicit" system.
