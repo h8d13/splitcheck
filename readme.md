@@ -35,3 +35,8 @@ Where a `-docs` convention already exists. I,e: [`wireplumber-docs`](https://git
 ---
 
 These obviously take a **bit of work and due process**, but make for a smaller and more "explicit" system.
+
+---
+
+`makepkg` has no built-in split partitioner.
+There is a maintainer's richer declarative alternative: https://gitlab.archlinux.org/pacman/pacman/-/tree/allan/splitpkg2
