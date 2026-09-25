@@ -1,5 +1,5 @@
 #!/bin/bash
-# usage: splitcheck.sh OLD.pkg.tar.zst NEW1.pkg.tar.zst [NEW2...]
+# usage: sc.sh OLD.pkg.tar.zst NEW1.pkg.tar.zst [NEW2...]
 # Compares path, mode, owner, symlink target.
 set -u
 
