@@ -83,11 +83,11 @@ Or even better be like VSC Chromium and ship 15MB HTML licenses, 27k lines long 
 
 For split packages this is relevant again where we can assume the license is the same (usually, and the parent package is likely already installed)
 What I mean is also to be able to get rid of having to do:
-```
+
+```shell
   install -Dm644 openjpeg-"${pkgver}"/LICENSE \
     -t "${pkgdir}"/usr/share/licenses/${pkgname}/
 ```
-
 For each split... repeat X times.
 
 ---
@@ -104,8 +104,8 @@ Anyways you probably understand the pattern at this point.
 So if we combine our reasoning here:
 
 1. More explicit systems: "Decide what you want to install", follows the philosophy points above, closer IMO.
-2. Respects more end-users: (which might not have a lot of space or internet access/speed) and the server(s) he uses.
-3. Makes for slightly more packaging work. But which is questionable in upstream in the first place: ie, bundling debug/docs/tools in an "end-product" based on detection.
+2. Respects more end-users: (who do not have a lot of space or internet access/speed) and the server(s) used.
+3. Makes for slightly more packaging work. But which is questionable in upstream in the first place: ie, bundling debug/docs/tools in an "end-product" based on deps detection.
 
 The effort to me here is worth the reward. Which has always been smaller, faster, more declarative systems.
 
