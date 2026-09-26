@@ -41,8 +41,12 @@ These obviously take a **bit of work and due process**, but make for a smaller a
 
 ---
 
+## Approaches
+
 `makepkg` has no built-in split partitioner.
 There is a maintainer's richer declarative alternative: https://gitlab.archlinux.org/pacman/pacman/-/tree/allan/splitpkg2
+
+Full thread: https://gitlab.archlinux.org/pacman/pacman/-/merge_requests/314#note_561561
 
 ---
 
@@ -76,6 +80,15 @@ On another note: split packages (and regular ones) often also duplicate licenses
 Which are for the most part exactly identical but for the <name/company> <year> + SPDX headers/folder in each file.
 
 Or even better be like VSC Chromium and ship 15MB HTML licenses, 27k lines long (xdxd).
+
+For split packages this is relevant again where we can assume the license is the same (usually, and the parent package is likely already installed)
+What I mean is also to be able to get rid of having to do:
+```
+  install -Dm644 openjpeg-"${pkgver}"/LICENSE \
+    -t "${pkgdir}"/usr/share/licenses/${pkgname}/
+```
+
+For each split... repeat X times.
 
 ---
 
